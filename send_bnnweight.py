@@ -15,8 +15,8 @@ class Weightwriting(Packet):
     name = "Weightwriting"
 
     fields_desc = [
-        BitField("index", 1, 8), # index: 0~119, only need 7
-        BitField("weight", 10, 40) # weight: (in decimal, largest is) 2^120 -1 = 1.1329*10^36, only need 37
+        BitField("index", 1, 32), 
+        BitField("weight", 10, 120)
     ]
 
 def main():
