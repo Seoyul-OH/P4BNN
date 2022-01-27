@@ -16,7 +16,7 @@ class Weightwriting(Packet):
 
     fields_desc = [
         BitField("index", 1, 32), 
-        BitField("weight", 10, 120)
+        BitField("weight", 0, 120)
     ]
 
 def main():
